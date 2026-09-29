@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIPPIA Beauty | Katalog & Panduan Lengkap Lip Products</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        berry: {
+                            50: '#fdf2f4',
+                            100: '#fce7ea',
+                            200: '#f9d2d9',
+                            300: '#f4adb9',
+                            400: '#eb7a90',
+                            500: '#df4968',
+                            600: '#ca294a',
+                            700: '#a91d39',
+                            800: '#8d1c33',
+                            900: '#771c30',
+                        },
+                        nude: {
+                            50: '#faf6f3',
+                            100: '#f3e8e2',
+                            200: '#e6d2c6',
+                            300: '#d3b4a2',
+                            400: '#bd917a',
+                            500: '#a9735d',
+                            600: '#915b49',
+                            700: '#77473a',
+                            800: '#623c32',
+                            900: '#52332c',
+                        },
+                        rose: {
+                            soft: '#f8ecee',
+                            dust: '#dcaeb6',
+                            gold: '#c99380',
+                            blush: '#f2a6ac'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-serif-heading { font-family: 'Playfair Display', serif; }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #fce7ea; }
+        ::-webkit-scrollbar-thumb { background: #eb7a90; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #df4968; }
+
+        .glass-header {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .hero-banner {
+            background: linear-gradient(135deg, rgba(119, 28, 48, 0.82) 0%, rgba(169, 29, 57, 0.6) 100%), 
+                        url('https://images.unsplash.com/photo-1586495777744-4413f21062fa?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .swatch-circle {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .swatch-circle:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-berry-50 text-slate-800 antialiased selection:bg-berry-500 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-berry-900 text-berry-100 text-xs py-2 px-4 text-center font-medium">
+        <span class="inline-block bg-berry-500 text-white font-bold px-2 py-0.5 rounded text-[10px] mr-2">DISCOUNT 20%</span>
+        Gratis Ongkir Seluruh Indonesia Untuk Beli Minimal 2 Lip Products! ✨ 
+        <a href="#katalog" class="underline text-berry-200 hover:text-white ml-1 font-semibold">Cek Katalog Produk</a>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 w-full glass-header border-b border-berry-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2.5 group">
+                    <div class="w-10 h-10 bg-berry-700 text-white flex items-center justify-center rounded-2xl font-serif-heading font-bold text-xl shadow-md group-hover:bg-berry-800 transition">
+                        L
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serif-heading text-xl md:text-2xl font-bold tracking-wider text-berry-900 leading-none">LIPPIA</span>
+                        <span class="text-[9px] tracking-widest text-berry-600 uppercase font-extrabold mt-0.5">Beauty Lip Studio</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-7 text-xs font-bold uppercase tracking-wider text-berry-900">
+                    <a href="#beranda" class="hover:text-berry-600 transition py-1 border-b-2 border-transparent hover:border-berry-600">Beranda</a>
+                    <a href="#shade-finder" class="hover:text-berry-600 transition py-1 border-b-2 border-transparent hover:border-berry-600">Shade Finder Quiz</a>
+                    <a href="#edukasi" class="hover:text-berry-600 transition py-1 border-b-2 border-transparent hover:border-berry-600">Panduan Lip Products</a>
+                    <a href="#katalog" class="hover:text-berry-600 transition py-1 border-b-2 border-transparent hover:border-berry-600">Katalog Produk</a>
+                    <a href="#testimoni" class="hover:text-berry-600 transition py-1 border-b-2 border-transparent hover:border-berry-600">Ulasan</a>
+                </nav>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center space-x-3">
+                    <button onclick="toggleSearchModal()" class="p-2 text-berry-800 hover:text-berry-600 transition rounded-full hover:bg-berry-100" title="Cari Produk">
+                        <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                    </button>
+
+                    <!-- Cart Trigger Button -->
+                    <button onclick="toggleCartDrawer()" class="relative p-2 text-berry-800 hover:text-berry-600 transition rounded-full hover:bg-berry-100" title="Keranjang Belanja">
+                        <i class="fa-solid fa-bag-shopping text-xl"></i>
+                        <span id="cart-badge" class="absolute -top-1 -right-1 bg-berry-600 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">0</span>
+                    </button>
+
+                    <a href="#katalog" class="hidden sm:inline-flex items-center gap-2 bg-berry-800 hover:bg-berry-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm">
+                        <i class="fa-solid fa-heart text-sm"></i>
+                        <span>Belanja Lip Products</span>
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button onclick="toggleMobileMenu()" class="md:hidden p-2 text-berry-900 rounded-lg focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-berry-100 px-4 pt-3 pb-6 space-y-3 shadow-xl">
+            <a href="#beranda" onclick="toggleMobileMenu()" class="block py-2 text-berry-900 font-semibold hover:text-berry-600">Beranda</a>
+            <a href="#shade-finder" onclick="toggleMobileMenu()" class="block py-2 text-berry-900 font-semibold hover:text-berry-600">Shade Finder Quiz</a>
+            <a href="#edukasi" onclick="toggleMobileMenu()" class="block py-2 text-berry-900 font-semibold hover:text-berry-600">Panduan Jenis Lip Products</a>
+            <a href="#katalog" onclick="toggleMobileMenu()" class="block py-2 text-berry-900 font-semibold hover:text-berry-600">Katalog Lip Tint & Lipstick</a>
+            <a href="#testimoni" onclick="toggleMobileMenu()" class="block py-2 text-berry-900 font-semibold hover:text-berry-600">Ulasan & Review</a>
+            <div class="pt-2 border-t border-berry-100">
+                <a href="#katalog" onclick="toggleMobileMenu()" class="w-full text-center bg-berry-900 text-white text-xs font-bold py-2.5 rounded-xl block">
+                    <i class="fa-solid fa-sparkles mr-1.5"></i> Lihat Katalog
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative hero-banner min-h-[85vh] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 text-white">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            
+            <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/30 text-xs sm:text-sm font-semibold text-berry-100 shadow-sm">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-blush animate-ping"></span>
+                Formulasi Ringan, Moisture Lock 12 Jam & Non-Drying
+            </div>
+
+            <h1 class="font-serif-heading text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight drop-shadow-md">
+                Temukan Warna Bibir Impianmu untuk Gaya Daily & Glam!
+            </h1>
+
+            <p class="text-berry-100 text-base sm:text-lg font-normal max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
+                Dari Lip Tint yang natural untuk ke sekolah/kampus, sampai Liquid Lipstick tahan lama dan Lip Gloss berkilau. Dapatkan bibir sehat, lembab, dan tampak memikat setiap saat!
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+                <a href="#katalog" class="w-full sm:w-auto bg-berry-600 hover:bg-berry-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-lips"></i>
+                    <span>Eksplor Katalog Produk</span>
+                </a>
+                <a href="#shade-finder" class="w-full sm:w-auto bg-white/20 hover:bg-white/30 text-white border border-white/40 font-semibold px-8 py-4 rounded-xl backdrop-blur-md transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span>Kuis Shade Finder</span>
+                </a>
+            </div>
+
+            <!-- Features Highlights -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-10 border-t border-white/20 text-center max-w-3xl mx-auto">
+                <div class="p-2">
+                    <p class="text-xl sm:text-2xl font-bold text-white">Cruelty-Free</p>
+                    <p class="text-[11px] text-berry-200">100% Aman & Tanpa Uji Hewan</p>
+                </div>
+                <div class="p-2">
+                    <p class="text-xl sm:text-2xl font-bold text-white">Vitamin E & Jojoba</p>
+                    <p class="text-[11px] text-berry-200">Melembabkan Bibir Pecah</p>
+                </div>
+                <div class="p-2">
+                    <p class="text-xl sm:text-2xl font-bold text-white">Transferproof</p>
+                    <p class="text-[11px] text-berry-200">Tidak Menempel di Masker/Gelas</p>
+                </div>
+                <div class="p-2">
+                    <p class="text-xl sm:text-2xl font-bold text-white">25+ Shade</p>
+                    <p class="text-[11px] text-berry-200">Nude, Berry, Pink & Peach</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Shade Finder Quiz Section -->
+    <section id="shade-finder" class="py-16 bg-white border-b border-berry-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-berry-50 via-rose-soft to-nude-100 p-8 sm:p-12 rounded-3xl border border-berry-200 shadow-xl">
+                
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <span class="inline-block bg-berry-700 text-white text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider mb-2">
+                        <i class="fa-solid fa-sparkles mr-1"></i> Interactive Quiz
+                    </span>
+                    <h2 class="font-serif-heading text-2xl sm:text-3xl font-bold text-berry-900">
+                        Cari Shade Produk Bibir Paling Pas Buat Kamu!
+                    </h2>
+                    <p class="text-berry-700 text-xs sm:text-sm mt-1">
+                        Jawab 3 pertanyaan singkat di bawah ini untuk mendapatkan saran warna & jenis produk bibir terbaik.
+                    </p>
+                </div>
+
+                <div id="quiz-container" class="space-y-6">
+                    <!-- Step 1 -->
+                    <div id="quiz-step-1" class="quiz-step">
+                        <p class="font-bold text-berry-900 text-sm mb-3">1. Apa undertone warna kulit kamu?</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <button onclick="selectQuizOption('undertone', 'warm', this)" class="quiz-btn p-4 bg-white rounded-2xl border border-berry-200 text-left hover:border-berry-500 transition font-semibold text-xs text-berry-800">
+                                🟡 Warm / Hangat
+                                <span class="block text-[10px] text-slate-500 font-normal mt-1">Urat nadi kehijauan, cocok pakai perhiasan emas.</span>
+                            </button>
+                            <button onclick="selectQuizOption('undertone', 'cool', this)" class="quiz-btn p-4 bg-white rounded-2xl border border-berry-200 text-left hover:border-berry-500 transition font-semibold text-xs text-berry-800">
+                                🔵 Cool / Dingin
+                                <span class="block text-[10px] text-slate-500 font-normal mt-1">Urat nadi kebiruan/ungu, cocok perhiasan perak.</span>
+                            </button>
+                            <button onclick="selectQuizOption('undertone', 'neutral', this)" class="quiz-btn p-4 bg-white rounded-2xl border border-berry-200 text-left hover:border-berry-500 transition font-semibold text-xs text-berry-800">
+                                ⚪ Neutral / Netral
+                                <span class="block text-[10px] text-slate-500 font-normal mt-1">Campuran urat hijau & biru, cocok semua perhiasan.</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div id="quiz-step-2" class="quiz-step opacity-50 pointer-events-none">
+                        <p class="font-bold text-berry-900 text-sm mb-3">2. Hasil akhir (finish) seperti apa yang kamu sukai?</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <button onclick="selectQuizOption('finish', 'glossy', this)" class="quiz-btn p-4 bg-white rounded-2xl border border-berry-200 text-left hover:border-berry-500 transition font-semibold text-xs text-berry-800">
+                                ✨ Glossy / Plump & Dewy
+                                <span class="block text-[10px] text-slate-500 font-normal mt-1">Bibir terlihat basah, kenyal, dan segar.</span>
+                            </button>
+                            <button onclick="selectQuizOption('finish', 'matte', this)" class="quiz-btn p-4 bg-white rounded-2xl border border-berry-200 text-left hover:border-berry-500 transition font-semibold text-xs text-berry-800">
+                                💄 Velvet / Soft Matte
+                                <span class="block text-[10px] text-slate-500 font-normal mt-1">Bebas kilau, menutup bibir hitam sempurna.</span>
+                            </button>
+                            <button onclick="selectQuizOption('finish', 'tint', this)" class="quiz-btn p-4 bg-white rounded-2xl border border-berry-200 text-left hover:border-berry-500 transition font-semibold text-xs text-berry-800">
+                                🍒 Watery Tint / Stain
+                                <span class="block text-[10px] text-slate-500 font-normal mt-1">Sangat ringan, efek bibir merona alami.</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div id="quiz-step-3" class="quiz-step opacity-50 pointer-events-none">
+                        <p class="font-bold text-berry-900 text-sm mb-3">3. Untuk aktivitas apa produk ini dipakai?</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <button onclick="selectQuizOption('occasion', 'daily', this)" class="quiz-btn p-4 bg-white rounded-2xl border border-berry-200 text-left hover:border-berry-500 transition font-semibold text-xs text-berry-800">
+                                🎒 Harian / Sekolah / Magang
+                                <span class="block text-[10px] text-slate-500 font-normal mt-1">Simpel, tidak mencolok, kelihatan fresh.</span>
+                            </button>
+                            <button onclick="selectQuizOption('occasion', 'hangout', this)" class="quiz-btn p-4 bg-white rounded-2xl border border-berry-200 text-left hover:border-berry-500 transition font-semibold text-xs text-berry-800">
+                                ☕ Hangout & OOTD Cafe
+                                <span class="block text-[10px] text-slate-500 font-normal mt-1">Trendy, peachy/nude, estetik di foto.</span>
+                            </button>
+                            <button onclick="selectQuizOption('occasion', 'party', this)" class="quiz-btn p-4 bg-white rounded-2xl border border-berry-200 text-left hover:border-berry-500 transition font-semibold text-xs text-berry-800">
+                                🎉 Pesta / Acara Spesial
+                                <span class="block text-[10px] text-slate-500 font-normal mt-1">Bold, mewah, tahan lama seharian.</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Submit Quiz -->
+                    <div class="text-center pt-4">
+                        <button id="btn-submit-quiz" disabled onclick="calculateQuizResult()" class="bg-berry-900 hover:bg-berry-800 disabled:opacity-40 disabled:cursor-not-allowed text-white text-xs font-bold px-8 py-3.5 rounded-xl transition shadow-md">
+                            <i class="fa-solid fa-magnifying-glass-sparkles mr-2"></i> Lihat Hasil Rekomendasi
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quiz Result Box (Hidden initial) -->
+                <div id="quiz-result-card" class="hidden mt-6 bg-white p-6 sm:p-8 rounded-2xl border border-berry-300 shadow-lg text-center space-y-4">
+                    <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">
+                        ✨ Hasil Rekomendasi Shade Terbaik Kamu!
+                    </span>
+                    <h3 id="result-title" class="font-serif-heading text-xl sm:text-2xl font-bold text-berry-900">
+                        <!-- Result Title populated by JS -->
+                    </h3>
+                    <p id="result-desc" class="text-xs sm:text-sm text-berry-800 max-w-lg mx-auto">
+                        <!-- Result description populated by JS -->
+                    </p>
+                    <div class="pt-2 flex flex-wrap justify-center gap-3">
+                        <a href="#katalog" onclick="filterCatalogByShade()" class="bg-berry-700 hover:bg-berry-800 text-white font-bold text-xs px-6 py-3 rounded-xl transition shadow">
+                            Lihat Produk Hasil Kuis
+                        </a>
+                        <button onclick="resetQuiz()" class="bg-berry-100 hover:bg-berry-200 text-berry-800 font-bold text-xs px-4 py-3 rounded-xl transition">
+                            Coba Kuis Lagi
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Section: Perbedaan Jenis-Jenis Lip Products -->
+    <section id="edukasi" class="py-20 bg-berry-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-block bg-berry-700 text-berry-200 text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider mb-3">
+                    Panduan Memilih Lip Products
+                </span>
+                <h2 class="font-serif-heading text-3xl sm:text-4xl font-bold text-white mb-4">
+                    Ketahui Perbedaan Lip Tint, Lipstick, Lip Gloss & Lainnya!
+                </h2>
+                <p class="text-berry-200 text-sm sm:text-base">
+                    Bingung bedanya Lip Stain dan Lip Tint? Atau kapan harus pakai Lip Balm? Yuk pelajari kegunaan masing-masing produk bibir agar hasil makeup kamu maksimal.
+                </p>
+            </div>
+
+            <!-- Grid Categories -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Category 1: Lip Tint -->
+                <div class="bg-berry-800/80 rounded-3xl p-6 border border-berry-700 shadow-xl flex flex-col justify-between hover:border-berry-500 transition">
+                    <div>
+                        <div class="w-12 h-12 bg-berry-600/50 rounded-2xl flex items-center justify-center text-2xl text-rose-blush mb-4">
+                            🍒
+                        </div>
+                        <h3 class="font-serif-heading text-xl font-bold text-white mb-2">1. Lip Tint / Water Tint</h3>
+                        <p class="text-berry-200 text-xs leading-relaxed mb-4">
+                            Formulasi berbasis air/gel yang meresap ke lapisan bibir. Memberikan warna merona alami khas Ombre Lip ala Korea.
+                        </p>
+                        <ul class="text-xs text-berry-300 space-y-1.5 list-disc list-inside">
+                            <li>Tekstur sangat ringan bak tanpa makeup</li>
+                            <li>Cocok untuk daily siswa/mahasiswa</li>
+                            <li>Tahan lama karena meninggalkan stain warna</li>
+                        </ul>
+                    </div>
+                    <button onclick="filterCatalog('Lip Tint')" class="mt-6 w-full bg-berry-700 hover:bg-berry-600 text-white text-xs font-bold py-2.5 rounded-xl transition">
+                        Cari Lip Tint <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+
+                <!-- Category 2: Lipstick / Matte Lip Cream -->
+                <div class="bg-berry-800/80 rounded-3xl p-6 border border-berry-700 shadow-xl flex flex-col justify-between hover:border-berry-500 transition">
+                    <div>
+                        <div class="w-12 h-12 bg-berry-600/50 rounded-2xl flex items-center justify-center text-2xl text-rose-blush mb-4">
+                            💄
+                        </div>
+                        <h3 class="font-serif-heading text-xl font-bold text-white mb-2">2. Lipstick & Lip Velvet</h3>
+                        <p class="text-berry-200 text-xs leading-relaxed mb-4">
+                            Memiliki pigmentasi warna paling pekat. Sangat efektif untuk menutup warna bibir gelap/gelap secara instan.
+                        </p>
+                        <ul class="text-xs text-berry-300 space-y-1.5 list-disc list-inside">
+                            <li>Pigmentasi tinggi sekali usap</li>
+                            <li>Pilihan finish: Velvet, Matte, Satin</li>
+                            <li>Cocok untuk foto formal, pesta, & acara penting</li>
+                        </ul>
+                    </div>
+                    <button onclick="filterCatalog('Lipstick')" class="mt-6 w-full bg-berry-700 hover:bg-berry-600 text-white text-xs font-bold py-2.5 rounded-xl transition">
+                        Cari Lipstick <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+
+                <!-- Category 3: Lip Gloss -->
+                <div class="bg-berry-800/80 rounded-3xl p-6 border border-berry-700 shadow-xl flex flex-col justify-between hover:border-berry-500 transition">
+                    <div>
+                        <div class="w-12 h-12 bg-berry-600/50 rounded-2xl flex items-center justify-center text-2xl text-rose-blush mb-4">
+                            ✨
+                        </div>
+                        <h3 class="font-serif-heading text-xl font-bold text-white mb-2">3. Lip Gloss / Plumper</h3>
+                        <p class="text-berry-200 text-xs leading-relaxed mb-4">
+                            Memberikan kilau reflektif bagai kaca (*glass-like shine*). Membikin bibir tipis terlihat lebih bervolume dan segar.
+                        </p>
+                        <ul class="text-xs text-berry-300 space-y-1.5 list-disc list-inside">
+                            <li>Efek bibir juicy & plump instant</li>
+                            <li>Bisa dipakai sendiri / sebagai topper lipstick</li>
+                            <li>Melembabkan dengan kandungan essential oils</li>
+                        </ul>
+                    </div>
+                    <button onclick="filterCatalog('Lip Gloss')" class="mt-6 w-full bg-berry-700 hover:bg-berry-600 text-white text-xs font-bold py-2.5 rounded-xl transition">
+                        Cari Lip Gloss <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+
+                <!-- Category 4: Lip Balm & Serum -->
+                <div class="bg-berry-800/80 rounded-3xl p-6 border border-berry-700 shadow-xl flex flex-col justify-between hover:border-berry-500 transition">
+                    <div>
+                        <div class="w-12 h-12 bg-berry-600/50 rounded-2xl flex items-center justify-center text-2xl text-rose-blush mb-4">
+                            🥑
+                        </div>
+                        <h3 class="font-serif-heading text-xl font-bold text-white mb-2">4. Tinted Lip Balm & Serum</h3>
+                        <p class="text-berry-200 text-xs leading-relaxed mb-4">
+                            Perawatan khusus untuk menutrisi bibir kering dan pecah-pecah, dengan sedikit sentuhan warna transparan yang alami.
+                        </p>
+                        <ul class="text-xs text-berry-300 space-y-1.5 list-disc list-inside">
+                            <li>Kaya kandungan Vitamin E & Shea Butter</li>
+                            <li>Sangat aman dipakai tidur atau ke sekolah</li>
+                            <li>Mencegah bibir menghitam akibat sinar UV</li>
+                        </ul>
+                    </div>
+                    <button onclick="filterCatalog('Lip Balm')" class="mt-6 w-full bg-berry-700 hover:bg-berry-600 text-white text-xs font-bold py-2.5 rounded-xl transition">
+                        Cari Lip Balm <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+
+                <!-- Category 5: Lip Stain / Lip Ink -->
+                <div class="bg-berry-800/80 rounded-3xl p-6 border border-berry-700 shadow-xl flex flex-col justify-between hover:border-berry-500 transition">
+                    <div>
+                        <div class="w-12 h-12 bg-berry-600/50 rounded-2xl flex items-center justify-center text-2xl text-rose-blush mb-4">
+                            🖊️
+                        </div>
+                        <h3 class="font-serif-heading text-xl font-bold text-white mb-2">5. Lip Stain / Ink</h3>
+                        <p class="text-berry-200 text-xs leading-relaxed mb-4">
+                            Versi lip tint ekstra tahan lama (*smudgeproof* & *transferproof*). Bertahan hingga 16 jam tanpa perlu *touch-up*.
+                        </p>
+                        <ul class="text-xs text-berry-300 space-y-1.5 list-disc list-inside">
+                            <li>Formula tahan air & saat makan minum</li>
+                            <li>Tidaks gampang luntur terkena masker</li>
+                            <li>Warna meresap sempurna ke garis bibir</li>
+                        </ul>
+                    </div>
+                    <button onclick="filterCatalog('Lip Stain')" class="mt-6 w-full bg-berry-700 hover:bg-berry-600 text-white text-xs font-bold py-2.5 rounded-xl transition">
+                        Cari Lip Stain <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+
+                <!-- Category 6: Lip Liner -->
+                <div class="bg-berry-800/80 rounded-3xl p-6 border border-berry-700 shadow-xl flex flex-col justify-between hover:border-berry-500 transition">
+                    <div>
+                        <div class="w-12 h-12 bg-berry-600/50 rounded-2xl flex items-center justify-center text-2xl text-rose-blush mb-4">
+                            ✏️
+                        </div>
+                        <h3 class="font-serif-heading text-xl font-bold text-white mb-2">6. Lip Liner / Contouring</h3>
+                        <p class="text-berry-200 text-xs leading-relaxed mb-4">
+                            Pensil khusus untuk mempertegas garis tepi bibir, mengoreksi bentuk bibir asimetris, dan mencegah lipstick belepotan.
+                        </p>
+                        <ul class="text-xs text-berry-300 space-y-1.5 list-disc list-inside">
+                            <li>Menciptakan efek bibir lebih tebal/simetris</li>
+                            <li>Rahasia bibir rapi presisi ala MUA</li>
+                            <li>Pondasi awal sebelum memakai lipstick</li>
+                        </ul>
+                    </div>
+                    <button onclick="filterCatalog('Lip Liner')" class="mt-6 w-full bg-berry-700 hover:bg-berry-600 text-white text-xs font-bold py-2.5 rounded-xl transition">
+                        Cari Lip Liner <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="katalog" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-6">
+                <div>
+                    <span class="text-xs font-bold tracking-widest text-berry-600 uppercase">Koleksi Lengkap 2026</span>
+                    <h2 class="font-serif-heading text-3xl sm:text-4xl font-bold text-berry-900 mt-1">
+                        Katalog Produk Bibir LIPPIA
+                    </h2>
+                    <p class="text-xs text-berry-700 mt-1">Pilih kategori favoritmu atau klik warna *swatch* untuk melihat detail warna.</p>
+                </div>
+
+                <!-- Category Filter Buttons -->
+                <div class="flex flex-wrap gap-2" id="category-filter-container">
+                    <button onclick="filterCatalog('Semua')" class="filter-btn active bg-berry-900 text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition shadow-sm">
+                        Semua Produk
+                    </button>
+                    <button onclick="filterCatalog('Lip Tint')" class="filter-btn bg-berry-50 text-berry-800 hover:bg-berry-200 text-xs font-semibold px-4 py-2.5 rounded-xl transition border border-berry-200">
+                        Lip Tint
+                    </button>
+                    <button onclick="filterCatalog('Lipstick')" class="filter-btn bg-berry-50 text-berry-800 hover:bg-berry-200 text-xs font-semibold px-4 py-2.5 rounded-xl transition border border-berry-200">
+                        Lipstick & Velvet
+                    </button>
+                    <button onclick="filterCatalog('Lip Gloss')" class="filter-btn bg-berry-50 text-berry-800 hover:bg-berry-200 text-xs font-semibold px-4 py-2.5 rounded-xl transition border border-berry-200">
+                        Lip Gloss
+                    </button>
+                    <button onclick="filterCatalog('Lip Balm')" class="filter-btn bg-berry-50 text-berry-800 hover:bg-berry-200 text-xs font-semibold px-4 py-2.5 rounded-xl transition border border-berry-200">
+                        Lip Balm
+                    </button>
+                    <button onclick="filterCatalog('Lip Stain')" class="filter-btn bg-berry-50 text-berry-800 hover:bg-berry-200 text-xs font-semibold px-4 py-2.5 rounded-xl transition border border-berry-200">
+                        Lip Stain
+                    </button>
+                    <button onclick="filterCatalog('Lip Liner')" class="filter-btn bg-berry-50 text-berry-800 hover:bg-berry-200 text-xs font-semibold px-4 py-2.5 rounded-xl transition border border-berry-200">
+                        Lip Liner
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Javascript will render products here -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonial & Beauty Tips Section -->
+    <section id="testimoni" class="py-20 bg-berry-50 border-t border-berry-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-berry-600">Ulasan Jujur Customer</span>
+                <h2 class="font-serif-heading text-3xl font-bold text-berry-900 mt-1">Apa Kata Mereka Tentang LIPPIA?</h2>
+                <p class="text-berry-700 text-xs sm:text-sm mt-2">Dengarkan ulasan dari ribuan remaja, mahasiswa, dan MUA yang menyukai formula ringan lip products kami.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-berry-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-berry-900 text-xs sm:text-sm leading-relaxed mb-4">
+                            "Juicy Jelly Lip Tint-nya warna Cherry Pop juara banget! Warnanya natural merona, gak bikin bibir kering walaupun dipakai sekolah seharian dari pagi sampai sore."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-berry-100 pt-3">
+                        <div class="w-8 h-8 rounded-full bg-berry-700 text-white flex items-center justify-center font-bold text-xs">
+                            CA
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-berry-900">Clarissa Amanda</p>
+                            <p class="text-[10px] text-berry-500">Siswa SMK Farmasi Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-berry-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-berry-900 text-xs sm:text-sm leading-relaxed mb-4">
+                            "Velvet Matte Lip Cream warna Warm Cocoa beneran nutup garis bibir gelapku. Hasilnya lembut banget bak beludru dan transferproof pas minum es kopi!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-berry-100 pt-3">
+                        <div class="w-8 h-8 rounded-full bg-berry-600 text-white flex items-center justify-center font-bold text-xs">
+                            DN
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-berry-900">Dhea Novita</p>
+                            <p class="text-[10px] text-berry-500">Mahasiswi & Beauty Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-berry-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-berry-900 text-xs sm:text-sm leading-relaxed mb-4">
+                            "Kuis Shade Finder-nya akurat banget! Awalnya bingung pilih nude lipstick yang gak bikin pucat, begitu dicoba ikutan kuis dapet shade Peach Nude yang pas banget!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-berry-100 pt-3">
+                        <div class="w-8 h-8 rounded-full bg-nude-700 text-white flex items-center justify-center font-bold text-xs">
+                            SP
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-berry-900">Siti Rahmawati</p>
+                            <p class="text-[10px] text-berry-500">Siswa SMK Multimedia Bandung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lip Care Tips Box -->
+            <div class="bg-gradient-to-r from-berry-900 to-berry-800 rounded-3xl p-8 text-white flex flex-col lg:flex-row items-center justify-between gap-6 shadow-xl">
+                <div class="space-y-2 max-w-xl">
+                    <span class="bg-rose-blush text-berry-900 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase">Tips Perawatan Bibir</span>
+                    <h3 class="font-serif-heading text-2xl font-bold">3 Langkah Rutin Agar Bibir Lembab & Tidak Menghitam</h3>
+                    <p class="text-berry-200 text-xs leading-relaxed">
+                        1. Lakukan lip scrub seminggu 2x. <br>
+                        2. Pakai Tinted Lip Balm bertabur Vitamin E sebelum tidur. <br>
+                        3. Jangan lupa bersihkan sisa lipstick dengan micellar water berbasis minyak.
+                    </p>
+                </div>
+                <a href="#katalog" onclick="filterCatalog('Lip Balm')" class="bg-white text-berry-900 hover:bg-berry-100 font-bold text-xs px-6 py-3.5 rounded-xl transition whitespace-nowrap shadow-md">
+                    Cek Lip Balm & Care <i class="fa-solid fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Shopping Cart Drawer -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden pointer-events-none transition-opacity duration-300 opacity-0 hidden">
+        <div class="absolute inset-0 bg-berry-900/60 backdrop-blur-sm pointer-events-auto" onclick="toggleCartDrawer()"></div>
+
+        <div class="fixed inset-y-0 right-0 max-w-full flex pl-10 pointer-events-auto">
+            <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col">
+                
+                <!-- Drawer Header -->
+                <div class="p-6 bg-berry-900 text-white flex items-center justify-between">
+                    <div class="flex items-center gap-2.5">
+                        <i class="fa-solid fa-bag-shopping text-berry-300 text-lg"></i>
+                        <h2 class="font-serif-heading text-lg font-bold">Keranjang Belanja</h2>
+                    </div>
+                    <button onclick="toggleCartDrawer()" class="p-2 text-berry-300 hover:text-white rounded-lg">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Drawer Body -->
+                <div class="flex-1 overflow-y-auto p-6 space-y-4" id="cart-items-container">
+                    <!-- Javascript populates cart items -->
+                </div>
+
+                <!-- Drawer Footer -->
+                <div class="p-6 bg-berry-50 border-t border-berry-200 space-y-4">
+                    <div class="flex items-center justify-between text-sm font-semibold text-berry-900">
+                        <span>Subtotal Produk</span>
+                        <span id="cart-subtotal" class="text-berry-900 font-extrabold text-base">Rp 0</span>
+                    </div>
+                    <p class="text-[11px] text-berry-600">Diskon otomatis & gratis ongkir berlaku untuk min. beli 2 pcs.</p>
+
+                    <div class="grid grid-cols-1 gap-2 pt-2">
+                        <button onclick="openCheckoutModal()" class="w-full bg-berry-900 hover:bg-berry-800 text-white font-bold py-3.5 rounded-xl transition flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-solid fa-credit-card"></i>
+                            <span>Lanjut ke Form Checkout</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="product-detail-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-berry-900/60 backdrop-blur-sm hidden overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative border border-berry-100">
+            <button onclick="closeProductModal()" class="absolute top-4 right-4 z-10 w-10 h-10 bg-berry-100 hover:bg-berry-200 text-berry-800 rounded-full flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 p-6 md:p-8 gap-8" id="product-modal-content">
+                <!-- Javascript populates detail -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Form Modal -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-berry-900/70 backdrop-blur-sm hidden overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl p-6 sm:p-8 relative">
+            
+            <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 w-9 h-9 bg-berry-100 hover:bg-berry-200 text-berry-800 rounded-full flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <h3 class="font-serif-heading text-2xl font-bold text-berry-900 mb-1">Formulir Pemesanan LIPPIA</h3>
+            <p class="text-xs text-berry-600 mb-6">Lengkapi data pengiriman untuk memesan lip products impianmu.</p>
+
+            <form id="checkout-form" onsubmit="handleFormCheckout(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-berry-800 mb-1">Nama Lengkap</label>
+                    <input type="text" id="cust-name" required placeholder="Contoh: Nabila Putri" class="w-full px-4 py-2.5 rounded-xl border border-berry-200 text-sm focus:ring-2 focus:ring-berry-500 focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-berry-800 mb-1">Nomor WhatsApp / Kontak</label>
+                    <input type="tel" id="cust-phone" required placeholder="081234567890" class="w-full px-4 py-2.5 rounded-xl border border-berry-200 text-sm focus:ring-2 focus:ring-berry-500 focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-berry-800 mb-1">Alamat Lengkap Pengiriman</label>
+                    <textarea id="cust-address" rows="3" required placeholder="Jl. Anggrek No. 12, Kel. Menteng, Kota Jakarta Pusat" class="w-full px-4 py-2.5 rounded-xl border border-berry-200 text-sm focus:ring-2 focus:ring-berry-500 focus:outline-none"></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-berry-800 mb-2">Metode Pembayaran</label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <label class="border border-berry-200 rounded-xl p-3 flex flex-col items-center justify-center text-center cursor-pointer hover:border-berry-600 has-[:checked]:border-berry-700 has-[:checked]:bg-berry-50">
+                            <input type="radio" name="payment" value="QRIS Instan" class="sr-only" checked>
+                            <i class="fa-solid fa-qrcode text-xl text-berry-900 mb-1"></i>
+                            <span class="text-xs font-bold text-berry-900">QRIS All Bank</span>
+                        </label>
+                        <label class="border border-berry-200 rounded-xl p-3 flex flex-col items-center justify-center text-center cursor-pointer hover:border-berry-600 has-[:checked]:border-berry-700 has-[:checked]:bg-berry-50">
+                            <input type="radio" name="payment" value="E-Wallet (GoPay/ShopeePay)" class="sr-only">
+                            <i class="fa-solid fa-wallet text-xl text-emerald-600 mb-1"></i>
+                            <span class="text-xs font-bold text-berry-900">E-Wallet</span>
+                        </label>
+                        <label class="border border-berry-200 rounded-xl p-3 flex flex-col items-center justify-center text-center cursor-pointer hover:border-berry-600 has-[:checked]:border-berry-700 has-[:checked]:bg-berry-50">
+                            <input type="radio" name="payment" value="COD (Bayar di Tempat)" class="sr-only">
+                            <i class="fa-solid fa-hand-holding-dollar text-xl text-amber-600 mb-1"></i>
+                            <span class="text-xs font-bold text-berry-900">COD</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="bg-berry-50 p-4 rounded-xl border border-berry-200 mt-4">
+                    <div class="flex justify-between text-sm font-bold text-berry-900">
+                        <span>Total Pembayaran:</span>
+                        <span id="checkout-total-price" class="text-berry-700">Rp 0</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-berry-900 hover:bg-berry-800 text-white font-bold py-3.5 rounded-xl transition shadow-lg mt-2">
+                    Konfirmasi & Kirim Pesanan
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating Cart Button -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2">
+        <button onclick="toggleCartDrawer()" class="relative w-14 h-14 bg-berry-900 hover:bg-berry-800 text-white rounded-full flex items-center justify-center text-xl shadow-2xl transition transform hover:scale-110">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span id="floating-cart-badge" class="absolute -top-1 -right-1 bg-berry-500 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">0</span>
+        </button>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="fixed inset-0 z-50 flex items-start justify-center pt-20 p-4 bg-berry-900/60 backdrop-blur-sm hidden">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-4 shadow-2xl relative border border-berry-200">
+            <div class="flex items-center gap-3 border-b border-berry-100 pb-3">
+                <i class="fa-solid fa-magnifying-glass text-berry-400"></i>
+                <input type="text" id="search-input" onkeyup="handleSearch()" placeholder="Cari Tint, Velvet, Gloss, Nude, Cherry..." class="w-full text-sm focus:outline-none">
+                <button onclick="toggleSearchModal()" class="text-berry-400 hover:text-berry-700">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div id="search-results" class="mt-3 max-h-60 overflow-y-auto divide-y divide-berry-50">
+                <p class="text-xs text-berry-400 text-center py-4">Ketik nama produk atau jenis yang dicari...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Element -->
+    <div id="toast-msg" class="fixed bottom-6 left-6 z-50 bg-berry-900 text-white text-xs font-bold px-4 py-3 rounded-xl shadow-2xl transition-all duration-300 transform translate-y-20 opacity-0 flex items-center gap-2 border border-berry-700">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span id="toast-text">Produk berhasil ditambahkan!</span>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-berry-900 text-berry-200 text-xs py-12 border-t border-berry-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-berry-700 text-white font-serif-heading font-bold flex items-center justify-center rounded-xl text-lg">L</div>
+                        <span class="font-serif-heading text-lg font-bold text-white tracking-wider">LIPPIA</span>
+                    </div>
+                    <p class="text-berry-300 leading-relaxed">
+                        Studio lip products estetik & berkualitas tinggi untuk kebutuhan makeup harian, sekolah, hingga acara pesta.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-3">Kategori Produk</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#katalog" onclick="filterCatalog('Lip Tint')" class="hover:text-white transition">Juicy Lip Tint</a></li>
+                        <li><a href="#katalog" onclick="filterCatalog('Lipstick')" class="hover:text-white transition">Velvet Matte Lipstick</a></li>
+                        <li><a href="#katalog" onclick="filterCatalog('Lip Gloss')" class="hover:text-white transition">Glassy Lip Gloss</a></li>
+                        <li><a href="#katalog" onclick="filterCatalog('Lip Balm')" class="hover:text-white transition">Nourishing Lip Balm</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-3">Fitur Interaktif</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#shade-finder" class="hover:text-white transition">Shade Finder Quiz 3-Langkah</a></li>
+                        <li><a href="#edukasi" class="hover:text-white transition">Panduan Lip Products</a></li>
+                        <li><a href="#testimoni" class="hover:text-white transition">Review & Tips Perawatan Bibir</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-3">Tugas Siswa SMK</h4>
+                    <p class="text-berry-300 mb-3 leading-relaxed">Website ini dibuat sebagai projek kreativitas siswa SMK jurusan Pemasaran / RPL / Multimedia.</p>
+                    <div class="flex flex-wrap gap-2 text-[11px]">
+                        <span class="bg-berry-800 px-3 py-1 rounded-lg border border-berry-700 text-berry-200">SMK Bisa!</span>
+                        <span class="bg-berry-800 px-3 py-1 rounded-lg border border-berry-700 text-berry-200">Beauty E-Commerce</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-berry-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+                <p>&copy; 2026 LIPPIA Studio. Created for Vocational High School (SMK) Portfolio Project.</p>
+                <div class="flex space-x-4 text-sm">
+                    <a href="https://instagram.com" target="_blank" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="hover:text-white"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Master Products Data
+        const products = [
+            {
+                id: 1,
+                name: "Juicy Jelly Lip Tint - Fresh Cherry",
+                category: "Lip Tint",
+                price: 35000,
+                originalPrice: 48000,
+                rating: 4.9,
+                reviews: 420,
+                bestSeller: true,
+                finish: "Watery Stain",
+                description: "Lip tint bertekstur gel cair yang terasa sangat dingin dan ringan di bibir. Meninggalkan stain warna pink kemerahan alami yang tahan hingga 8 jam.",
+                colors: [
+                    { name: "Cherry Pop", hex: "#ca294a" },
+                    { name: "Peach Crush", hex: "#eb7a90" },
+                    { name: "Berry Plum", hex: "#771c30" },
+                    { name: "Coral Sunset", hex: "#e06351" }
+                ],
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSELbNF5SPlOycpPgCYSLq7D9f_b1MfqvXprtnW7MStlw&s=10"
+            },
+            {
+                id: 2,
+                name: "Velvet Matte Lip Cream - Warm Cocoa",
+                category: "Lipstick",
+                price: 49000,
+                originalPrice: 65000,
+                rating: 5.0,
+                reviews: 310,
+                bestSeller: true,
+                finish: "Soft Velvet Matte",
+                description: "Lip cream dengan pigmentasi tinggi yang mampu menutup bibir gelap sekali usap. Hasil akhir lembut seperti beludru tanpa membuat bibir pecah.",
+                colors: [
+                    { name: "Warm Cocoa", hex: "#77473a" },
+                    { name: "Rose Nude", hex: "#dcaeb6" },
+                    { name: "Terracotta", hex: "#a94a38" },
+                    { name: "Muted Mauve", hex: "#915b49" }
+                ],
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYAW_KhUWY2Kzvo0a6dG2Eu1uXu27oD5TtAM5I646kPg&s=10"
+            },
+            {
+                id: 3,
+                name: "Glassy Plump Lip Gloss - Crystal Clear",
+                category: "Lip Gloss",
+                price: 42000,
+                originalPrice: 55000,
+                rating: 4.8,
+                reviews: 185,
+                bestSeller: false,
+                finish: "Glass-Like Shine",
+                description: "Lip gloss bening dengan partikel shimmer halus dan sensasi dingin mint. Mengandung Jojoba Oil untuk efek bibir juicy dan plumping instan.",
+                colors: [
+                    { name: "Crystal Clear", hex: "#fce7ea" },
+                    { name: "Pink Hologram", hex: "#f4adb9" },
+                    { name: "Peach Glow", hex: "#f2a6ac" }
+                ],
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5xMyC5ewbLmUEUA0yoKV8ZOiE3N4eEACF5eB93u53UA&s=10"
+            },
+            {
+                id: 4,
+                name: "Tinted Lip Balm - Hydrating Rose",
+                category: "Lip Balm",
+                price: 29000,
+                originalPrice: 38000,
+                rating: 4.9,
+                reviews: 520,
+                bestSeller: true,
+                finish: "Moist Glow",
+                description: "Lip balm bernutrisi dengan Vitamin E & Shea Butter. Memberikan rona merah sehat transparan yang aman dipakai sekolah maupun tidur.",
+                colors: [
+                    { name: "Soft Rose", hex: "#f2a6ac" },
+                    { name: "Fresh Strawberry", hex: "#df4968" },
+                    { name: "Honey Nude", hex: "#bd917a" }
+                ],
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGGPgRKIKVhfIflTkyTYf5gVpTgoVUQdnGtXImRwWq_Q&s=10"
+            },
+            {
+                id: 5,
+                name: "Longwear Lip Ink Stain - Deep Ruby",
+                category: "Lip Stain",
+                price: 52000,
+                originalPrice: 70000,
+                rating: 4.9,
+                reviews: 240,
+                bestSeller: false,
+                finish: "Ultra Smudgeproof",
+                description: "Lip stain cair dengan kekuatan tahan lama hingga 16 jam. Tidak transfer di gelas, masker, atau saat makan makanan berkuah.",
+                colors: [
+                    { name: "Deep Ruby", hex: "#8d1c33" },
+                    { name: "Brick Red", hex: "#9f362b" },
+                    { name: "Dusty Pink", hex: "#eb7a90" }
+                ],
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_47erDfKXoRXJnjDgBdOQ1YbT6cj-Iz0EvUhxdtJGCQ&s=10"
+            },
+            {
+                id: 6,
+                name: "Precision Lip Contour Liner - Nude Cocoa",
+                category: "Lip Liner",
+                price: 25000,
+                originalPrice: 35000,
+                rating: 4.7,
+                reviews: 130,
+                bestSeller: false,
+                finish: "Creamy Precision",
+                description: "Pensil lip liner yang empuk dan creamy untuk membingkai bibir agar terlihat lebih simetris dan bervolume sebelum memakai lipstick.",
+                colors: [
+                    { name: "Nude Cocoa", hex: "#623c32" },
+                    { name: "Rosy Brown", hex: "#915b49" },
+                    { name: "Sweet Pink", hex: "#f4adb9" }
+                ],
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw7P6fg8st8Scz3Gbxz41DluHvdDa0EFVDxUA6d497EA&s=10"
+            },
+            {
+                id: 7,
+                name: "Cloud Velvet Lip Tint - Cotton Peach",
+                category: "Lip Tint",
+                price: 38000,
+                originalPrice: 50000,
+                rating: 4.9,
+                reviews: 290,
+                bestSeller: false,
+                finish: "Blurring Velvet Tint",
+                description: "Perpaduan kelembutan lip cream dan stain ringannya lip tint. Memberikan efek blurring garis bibir halus tanpa rasa lengket.",
+                colors: [
+                    { name: "Cotton Peach", hex: "#f2a6ac" },
+                    { name: "Almond Nude", hex: "#d3b4a2" },
+                    { name: "Plum Berry", hex: "#771c30" }
+                ],
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYAW_KhUWY2Kzvo0a6dG2Eu1uXu27oD5TtAM5I646kPg&s=10"
+            },
+            {
+                id: 8,
+                name: "Satin Glow Lipstick - Rose Gold Elegance",
+                category: "Lipstick",
+                price: 55000,
+                originalPrice: 75000,
+                rating: 5.0,
+                reviews: 160,
+                bestSeller: true,
+                finish: "Luminous Satin",
+                description: "Lipstick klasik berformula satin yang mewah. Melembabkan sekaligus memberikan warna yang kaya dan elegan untuk acara formal.",
+                colors: [
+                    { name: "Rose Gold", hex: "#c99380" },
+                    { name: "Classic Crimson", hex: "#ca294a" },
+                    { name: "Warm Almond", hex: "#a9735d" }
+                ],
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdxUcp8eR0ksnYJY7fRythN2lmteHPwpC_RLnA1wvFfw&s=10"
+            }
+        ];
+
+        // State variables
+        let cart = [];
+        let activeCategory = 'Semua';
+        let selectedModalColor = null;
+        let quizAnswers = { undertone: null, finish: null, occasion: null };
+
+        // Currency Formatter
+        function formatRupiah(num) {
+            return 'Rp ' + num.toLocaleString('id-ID');
+        }
+
+        // Initialize On Window Load
+        window.addEventListener('DOMContentLoaded', () => {
+            renderProducts(products);
+            updateCartBadge();
+        });
+
+        // Filter Catalog by Category
+        function filterCatalog(category) {
+            activeCategory = category;
+            
+            const catalogSection = document.getElementById('katalog');
+            if(catalogSection) {
+                catalogSection.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            // Update active filter button styling
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            filterBtns.forEach(btn => {
+                const btnText = btn.innerText.trim();
+                if(btnText === category || (category === 'Semua' && btnText.includes('Semua'))) {
+                    btn.className = "filter-btn active bg-berry-900 text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition shadow-sm";
+                } else {
+                    btn.className = "filter-btn bg-berry-50 text-berry-800 hover:bg-berry-200 text-xs font-semibold px-4 py-2.5 rounded-xl transition border border-berry-200";
+                }
+            });
+
+            if (category === 'Semua') {
+                renderProducts(products);
+            } else {
+                const filtered = products.filter(p => p.category === category);
+                renderProducts(filtered);
+            }
+        }
+
+        // Render Product Cards Grid
+        function renderProducts(items) {
+            const grid = document.getElementById('product-grid');
+            if (!grid) return;
+
+            if (items.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-12">
+                        <i class="fa-solid fa-lips text-4xl text-berry-300 mb-2"></i>
+                        <p class="text-berry-700 font-semibold text-sm">Tidak ada produk ditemukan di kategori ini.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = items.map(p => `
+                <div class="bg-white rounded-3xl overflow-hidden border border-berry-200/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <!-- Image Wrapper -->
+                    <div class="relative aspect-square overflow-hidden bg-berry-50 cursor-pointer" onclick="openProductModal(${p.id})">
+                        <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        
+                        ${p.bestSeller ? `
+                            <span class="absolute top-3 left-3 bg-berry-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md uppercase">
+                                Best Seller ⭐
+                            </span>
+                        ` : ''}
+
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-berry-900 text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm">
+                            ${p.finish}
+                        </span>
+
+                        <div class="absolute inset-0 bg-berry-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="bg-white text-berry-900 text-xs font-bold px-4 py-2 rounded-xl shadow-lg transform translate-y-2 group-hover:translate-y-0 transition">
+                                <i class="fa-solid fa-eye mr-1"></i> Quick View & Swatches
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center gap-1 text-amber-400 text-xs mb-1">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="font-bold text-berry-900 ml-0.5">${p.rating}</span>
+                                <span class="text-berry-400 text-[11px]">(${p.reviews} ulasan)</span>
+                            </div>
+
+                            <h3 class="font-bold text-berry-900 text-sm hover:text-berry-600 transition cursor-pointer line-clamp-1" onclick="openProductModal(${p.id})">
+                                ${p.name}
+                            </h3>
+
+                            <p class="text-[11px] text-berry-600 line-clamp-2 mt-1">
+                                ${p.description}
+                            </p>
+                        </div>
+
+                        <div>
+                            <!-- Swatches circles -->
+                            <div class="mb-3">
+                                <p class="text-[10px] font-bold uppercase text-berry-500 mb-1">Swatches Color:</p>
+                                <div class="flex items-center gap-1.5">
+                                    ${p.colors.map(c => `
+                                        <span class="swatch-circle w-4 h-4 rounded-full border border-white ring-1 ring-slate-200 cursor-pointer" style="background-color: ${c.hex};" title="${c.name}" onclick="addToCartDirect(${p.id}, '${c.name}')"></span>
+                                    `).join('')}
+                                </div>
+                            </div>
+
+                            <div class="flex items-baseline gap-2 mb-3">
+                                <span class="text-base font-extrabold text-berry-900">${formatRupiah(p.price)}</span>
+                                <span class="text-xs text-berry-400 line-through">${formatRupiah(p.originalPrice)}</span>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-2">
+                                <button onclick="addToCartDirect(${p.id}, '${p.colors[0].name}')" class="bg-berry-100 hover:bg-berry-200 text-berry-900 text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1">
+                                    <i class="fa-solid fa-cart-plus"></i> + Cart
+                                </button>
+                                <button onclick="buyDirectly(${p.id})" class="bg-berry-900 hover:bg-berry-800 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1">
+                                    <i class="fa-solid fa-bolt"></i> Beli
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Open Product Modal Details
+        function openProductModal(id) {
+            const product = products.find(p => p.id === id);
+            if (!product) return;
+
+            selectedModalColor = product.colors[0].name;
+
+            const container = document.getElementById('product-modal-content');
+            container.innerHTML = `
+                <div class="space-y-3">
+                    <div class="aspect-square rounded-2xl overflow-hidden bg-berry-50 border border-berry-200 shadow-sm">
+                        <img src="${product.image}" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-between space-y-4">
+                    <div>
+                        <span class="text-xs font-extrabold uppercase text-berry-600 tracking-wider">${product.category} • ${product.finish}</span>
+                        <h2 class="text-xl font-serif-heading font-bold text-berry-900 mt-1 mb-2">${product.name}</h2>
+
+                        <div class="flex items-baseline gap-2 mb-4">
+                            <span class="text-2xl font-extrabold text-berry-900">${formatRupiah(product.price)}</span>
+                            <span class="text-xs text-berry-400 line-through">${formatRupiah(product.originalPrice)}</span>
+                        </div>
+
+                        <div class="bg-berry-50 p-3.5 rounded-2xl border border-berry-200 text-xs text-berry-900 space-y-1.5 mb-4">
+                            <p><strong>Formulasi:</strong> Nourishing Moisture Lock & UV Filter</p>
+                            <p class="leading-relaxed"><strong>Deskripsi:</strong> ${product.description}</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-xs font-bold uppercase text-berry-800 mb-2">Pilih Shade Warna Swatch:</label>
+                            <div class="flex flex-wrap gap-2">
+                                ${product.colors.map((c, idx) => `
+                                    <button onclick="selectModalColor(this, '${c.name}')" class="swatch-btn flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-xl border ${idx === 0 ? 'bg-berry-900 text-white border-berry-900' : 'bg-white text-berry-800 border-berry-300 hover:border-berry-600'} transition">
+                                        <span class="w-3.5 h-3.5 rounded-full border border-white" style="background-color: ${c.hex}"></span>
+                                        ${c.name}
+                                    </button>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 pt-3 border-t border-berry-100">
+                        <button onclick="addModalItemToCart(${product.id})" class="w-full bg-berry-900 hover:bg-berry-800 text-white font-bold py-3.5 rounded-xl transition text-xs flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-solid fa-bag-shopping"></i> Tambahkan ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('product-detail-modal').classList.remove('hidden');
+        }
+
+        function selectModalColor(btn, colorName) {
+            selectedModalColor = colorName;
+            document.querySelectorAll('.swatch-btn').forEach(b => {
+                b.className = "swatch-btn flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-xl border bg-white text-berry-800 border-berry-300 hover:border-berry-600 transition";
+            });
+            btn.className = "swatch-btn flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-xl border bg-berry-900 text-white border-berry-900 transition";
+        }
+
+        function closeProductModal() {
+            document.getElementById('product-detail-modal').classList.add('hidden');
+        }
+
+        // Quiz Handlers
+        function selectQuizOption(type, value, btn) {
+            quizAnswers[type] = value;
+
+            // Update styling in the step
+            const parent = btn.parentElement;
+            parent.querySelectorAll('.quiz-btn').forEach(b => {
+                b.classList.remove('border-berry-700', 'bg-berry-100', 'ring-2', 'ring-berry-500');
+            });
+            btn.classList.add('border-berry-700', 'bg-berry-100', 'ring-2', 'ring-berry-500');
+
+            // Unlock next step
+            if (type === 'undertone') {
+                document.getElementById('quiz-step-2').classList.remove('opacity-50', 'pointer-events-none');
+            } else if (type === 'finish') {
+                document.getElementById('quiz-step-3').classList.remove('opacity-50', 'pointer-events-none');
+            } else if (type === 'occasion') {
+                document.getElementById('btn-submit-quiz').removeAttribute('disabled');
+            }
+        }
+
+        function calculateQuizResult() {
+            const resultCard = document.getElementById('quiz-result-card');
+            const titleEl = document.getElementById('result-title');
+            const descEl = document.getElementById('result-desc');
+
+            let recommendedShade = "";
+            let recommendedProductType = "";
+
+            if (quizAnswers.undertone === 'warm') {
+                recommendedShade = "Peach, Coral, & Terracotta Nude";
+            } else if (quizAnswers.undertone === 'cool') {
+                recommendedShade = "Berry, Cherry Red, & Dusty Pink";
+            } else {
+                recommendedShade = "Rose Nude, Mauve, & Plum";
+            }
+
+            if (quizAnswers.finish === 'glossy') {
+                recommendedProductType = "Glassy Lip Gloss / Tinted Lip Balm";
+            } else if (quizAnswers.finish === 'matte') {
+                recommendedProductType = "Velvet Matte Lip Cream";
+            } else {
+                recommendedProductType = "Juicy Water Lip Tint / Lip Stain";
+            }
+
+            titleEl.innerText = `${recommendedProductType} (${recommendedShade})`;
+            descEl.innerText = `Berdasarkan undertone ${quizAnswers.undertone.toUpperCase()} dan pilihan style kamu, perpaduan warna ${recommendedShade} ini akan membuat wajahmu tampak lebih cerah seketika!`;
+
+            resultCard.classList.remove('hidden');
+            resultCard.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function resetQuiz() {
+            quizAnswers = { undertone: null, finish: null, occasion: null };
+            document.querySelectorAll('.quiz-btn').forEach(b => {
+                b.classList.remove('border-berry-700', 'bg-berry-100', 'ring-2', 'ring-berry-500');
+            });
+            document.getElementById('quiz-step-2').classList.add('opacity-50', 'pointer-events-none');
+            document.getElementById('quiz-step-3').classList.add('opacity-50', 'pointer-events-none');
+            document.getElementById('btn-submit-quiz').setAttribute('disabled', 'true');
+            document.getElementById('quiz-result-card').classList.add('hidden');
+        }
+
+        function filterCatalogByShade() {
+            filterCatalog('Semua');
+        }
+
+        // Cart Logic
+        function addToCartDirect(productId, colorName) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            const existingIndex = cart.findIndex(item => item.id === productId && item.color === colorName);
+            if (existingIndex > -1) {
+                cart[existingIndex].qty += 1;
+            } else {
+                cart.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    color: colorName,
+                    image: product.image,
+                    qty: 1
+                });
+            }
+
+            updateCartBadge();
+            showToast(`"${product.name} (${colorName})" ditambahkan ke keranjang!`);
+        }
+
+        function addModalItemToCart(productId) {
+            addToCartDirect(productId, selectedModalColor);
+            closeProductModal();
+            toggleCartDrawer(true);
+        }
+
+        function buyDirectly(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+            addToCartDirect(productId, product.colors[0].name);
+            openCheckoutModal();
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast-msg');
+            const text = document.getElementById('toast-text');
+            text.innerText = message;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+
+        function updateCartBadge() {
+            const totalCount = cart.reduce((acc, item) => acc + item.qty, 0);
+            document.getElementById('cart-badge').innerText = totalCount;
+            document.getElementById('floating-cart-badge').innerText = totalCount;
+        }
+
+        function toggleCartDrawer(forceOpen = false) {
+            const drawer = document.getElementById('cart-drawer');
+            if (forceOpen) {
+                drawer.classList.remove('hidden', 'opacity-0');
+            } else {
+                drawer.classList.toggle('hidden');
+                drawer.classList.toggle('opacity-0');
+            }
+            renderCartItems();
+        }
+
+        function renderCartItems() {
+            const container = document.getElementById('cart-items-container');
+            const subtotalEl = document.getElementById('cart-subtotal');
+            if (!container) return;
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-16 text-berry-400">
+                        <i class="fa-solid fa-basket-shopping text-4xl mb-3"></i>
+                        <p class="text-sm font-semibold">Keranjang belanja bibir Anda masih kosong.</p>
+                        <button onclick="toggleCartDrawer()" class="mt-4 text-xs font-bold text-berry-700 underline">Eksplor Katalog Produk</button>
+                    </div>
+                `;
+                subtotalEl.innerText = formatRupiah(0);
+                return;
+            }
+
+            let total = 0;
+            container.innerHTML = cart.map((item, index) => {
+                const sub = item.price * item.qty;
+                total += sub;
+                return `
+                    <div class="flex items-center gap-3 p-3 bg-berry-50 rounded-2xl border border-berry-200">
+                        <img src="${item.image}" class="w-16 h-16 object-cover rounded-xl border border-berry-200">
+                        <div class="flex-1">
+                            <h4 class="text-xs font-bold text-berry-900 line-clamp-1">${item.name}</h4>
+                            <span class="inline-block bg-berry-200 text-berry-800 text-[10px] font-bold px-2 py-0.5 rounded mt-0.5">Shade: ${item.color}</span>
+                            <p class="text-xs font-extrabold text-berry-900 mt-1">${formatRupiah(item.price)}</p>
+                            
+                            <div class="flex items-center gap-2 mt-2">
+                                <button onclick="updateQty(${index}, -1)" class="w-5 h-5 bg-white border border-berry-300 rounded flex items-center justify-center text-xs font-bold text-berry-800">-</button>
+                                <span class="text-xs font-bold">${item.qty}</span>
+                                <button onclick="updateQty(${index}, 1)" class="w-5 h-5 bg-white border border-berry-300 rounded flex items-center justify-center text-xs font-bold text-berry-800">+</button>
+                            </div>
+                        </div>
+                        <button onclick="removeItem(${index})" class="text-berry-400 hover:text-red-500 p-2">
+                            <i class="fa-solid fa-trash-can text-sm"></i>
+                        </button>
+                    </div>
+                `;
+            }).join('');
+
+            subtotalEl.innerText = formatRupiah(total);
+        }
+
+        function updateQty(index, delta) {
+            cart[index].qty += delta;
+            if (cart[index].qty <= 0) {
+                cart.splice(index, 1);
+            }
+            updateCartBadge();
+            renderCartItems();
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            updateCartBadge();
+            renderCartItems();
+        }
+
+        // Checkout Handlers
+        function openCheckoutModal() {
+            if (cart.length === 0) {
+                showToast('Keranjang belanja Anda masih kosong!');
+                return;
+            }
+            const total = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
+            document.getElementById('checkout-total-price').innerText = formatRupiah(total);
+            toggleCartDrawer();
+            document.getElementById('checkout-modal').classList.remove('hidden');
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById('checkout-modal').classList.add('hidden');
+        }
+
+        function handleFormCheckout(e) {
+            e.preventDefault();
+            const name = document.getElementById('cust-name').value;
+            const phone = document.getElementById('cust-phone').value;
+
+            showToast(`Terima kasih Kak ${name}! Pesanan lip products berhasil diproses.`);
+            
+            cart = [];
+            updateCartBadge();
+            closeCheckoutModal();
+        }
+
+        // Search Overlay
+        function toggleSearchModal() {
+            const modal = document.getElementById('search-modal');
+            modal.classList.toggle('hidden');
+            if (!modal.classList.contains('hidden')) {
+                document.getElementById('search-input').focus();
+            }
+        }
+
+        function handleSearch() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const resultsContainer = document.getElementById('search-results');
+
+            if (query.trim() === "") {
+                resultsContainer.innerHTML = '<p class="text-xs text-berry-400 text-center py-4">Ketik nama produk atau jenis yang dicari...</p>';
+                return;
+            }
+
+            const matches = products.filter(p => 
+                p.name.toLowerCase().includes(query) || 
+                p.category.toLowerCase().includes(query) ||
+                p.finish.toLowerCase().includes(query) ||
+                p.colors.some(c => c.name.toLowerCase().includes(query))
+            );
+
+            if (matches.length === 0) {
+                resultsContainer.innerHTML = '<p class="text-xs text-berry-400 text-center py-4">Tidak ada produk yang cocok dengan kata kunci.</p>';
+                return;
+            }
+
+            resultsContainer.innerHTML = matches.map(p => `
+                <div class="p-2 hover:bg-berry-50 rounded-xl flex items-center gap-3 cursor-pointer" onclick="openProductModal(${p.id}); toggleSearchModal();">
+                    <img src="${p.image}" class="w-10 h-10 object-cover rounded-lg">
+                    <div>
+                        <p class="text-xs font-bold text-berry-900">${p.name}</p>
+                        <p class="text-[10px] text-berry-500">${p.category} — ${formatRupiah(p.price)}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Mobile Nav Toggle
+        function toggleMobileMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
